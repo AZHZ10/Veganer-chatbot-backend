@@ -1,8 +1,6 @@
-sudo apt install python3-pip
-pip install flask
+sudo pip3 install flask
 
 #chatbot lib
-pip install pandas
-pip install sentence-transformers
-pip install flask_cors
-pip install json
+sudo pip3 install pandas
+sudo pip3 install sentence-transformers
+sudo pip3 install flask_cors
