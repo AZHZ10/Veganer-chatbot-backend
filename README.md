@@ -10,11 +10,11 @@ Settings > Developer Settings >
 ## AWS
 sudo apt update \
 sudo apt install python3-pip \
-sudo apt install openjdk-8-jre 자연어 처리를 위한 \
-sudo apt install openjdk-8-jdk
+df -h
+df -i
 
 ## 라이브러리 설치
+pip install sentence-transformers --no-cache-dir \
 sudo pip3 install flask \
 sudo pip3 install pandas \
-sudo pip3 install sentence-transformers \
 sudo pip3 install flask_cors
