@@ -1,5 +1,4 @@
 import pandas as pd
-# 챗봇의 대화 유사도 개선을 위해 cosine_similarity 사용
 from sklearn.metrics.pairwise import cosine_similarity
 import json
 
@@ -26,4 +25,4 @@ class ChatModel():
         similarity_arr = self.df['embedding'].map(  # similarity 열을 embedding과의 cosine_similarity로 추가
             lambda x: cosine_similarity([embedding], [x]).squeeze())
         answer = self.df.loc[similarity_arr.idxmax()]  # similarity가 가장 높은 행
-        return answer['챗봇']
+        return answer['Answer']
